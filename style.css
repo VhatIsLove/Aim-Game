@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  @font-face{
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 400;
+	src: url("fonts/MontserratAlternates-Medium.woff2") format("woff2");
+	font-display: swap;
+}
+  
+  .body{
+    font-family: "Montserrat";
+    color: #fff;
+    background-color: #777;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  a{
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  a:hover{
+    color: #70E500;
+    text-shadow: 1px 1px 20px #AEF26D;
+  }
+  
+  .start{
+    font-size: 1.5rem;
+  }
+  
+  .title{
+    line-height: 1.4;
+    font-size: 4rem;
+  }
+  
+  .screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    transition: margin 0.5s ease-out;
+    background: linear-gradient(90deg, #3D4043 0%, #193864 100%); 
+  }
+  
+  .screen.up{
+    margin-top: -100vh;
+  }
+  
+  .time-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  .time-item{
+    margin: 10px;
+  }
+  
+  .time-btn{
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    box-shadow: 0 0 0 1px #cdcdcd;
+    background-color: inherit;
+    cursor: pointer;
+  }
+  
+  .time-btn:hover{
+    color: #70E500;
+    text-shadow: 1px 1px 12px #AEF26D; 
+    box-shadow: 1px 1px 20px #AEF26D;
+  }
+  
+  .title-min{
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+  
+  .board{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 75%;
+    padding: 15px;
+    background: linear-gradient(90deg, #0C121B 0%, #0C0F14 100%);
+    border-radius: 25px;
+  }
+  
+  .board::after{
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      height: 8px;
+      width: 100%;
+      box-shadow: 0px 0px 15px 0px #AEF26D;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .circle{
+    position: absolute; 
+    background-color: #5CE041;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .prim{
+    color: #70E500;
+    text-shadow: 1px 1px 15px #AEF26D;
+  }
